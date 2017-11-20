@@ -9,5 +9,6 @@ namespace Opdracht_3
     public interface IPotloodSlijper
     {
         void Slijp(IPotlood potlood);
-    }
+    }
+
 }

@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="IPotlood.cs" />
     <Compile Include="IPotloodSlijper.cs" />
+    <Compile Include="Potlood.cs" />
+    <Compile Include="PotloodSlijper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

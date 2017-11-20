@@ -21,6 +21,7 @@ namespace Opdracht_3
             boodschap = "Potlood is weer ok!";
             p.Schrijf(boodschap);
             Console.ReadKey();
-        }
+        }
+
     }
 }
