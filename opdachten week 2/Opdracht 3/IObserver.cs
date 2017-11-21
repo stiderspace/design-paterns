@@ -1,4 +1,7 @@
-﻿namespace Opdracht_3
+﻿using System.Collections.Generic;
+using System.Net.NetworkInformation;
+
+namespace Opdracht_3
 {
     public interface IObserver
     {

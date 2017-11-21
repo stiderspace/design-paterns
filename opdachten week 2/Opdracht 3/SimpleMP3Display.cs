@@ -13,11 +13,12 @@ namespace Opdracht_3
         public SimpleMP3Display(MP3Player player)
         {
             this.player = player;
+            player.AddObserver(this);
         }
 
         public void Update(Nummer nummer)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Simple display: {0} - '{1}'", nummer.artist, nummer.title);
         }
     }
 }
