@@ -37,6 +37,7 @@ namespace Opdracht_3
             {
                 num = rnd.Next(3);
             } while (nummers[num] == HuidigNummer);
+
             foreach (IObserver observer in observers)
             {
                 observer.Update(nummers[num]);

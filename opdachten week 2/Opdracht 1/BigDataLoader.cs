@@ -13,7 +13,6 @@ namespace Week_2
             Extract();
             Transform();
             Load();
-
         }
 
         public abstract void Load();

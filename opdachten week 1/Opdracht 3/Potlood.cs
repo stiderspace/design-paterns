@@ -1,4 +1,6 @@
-﻿namespace Opdracht_3
+﻿using System;
+
+namespace Opdracht_3
 {
     internal class Potlood : IPotlood
     {
@@ -11,7 +13,7 @@
             maxTeSchrijven = max;
         }
 
-        public bool IsScherp => geschrevenKarakters > maxTeSchrijven;
+        public bool IsScherp => geschrevenKarakters < maxTeSchrijven;
 
         public void NaGeslepen()
         {
@@ -22,15 +24,19 @@
         {
             char[] chars = boodschap.ToCharArray();
 
-            for( int i = 0; i < maxTeSchrijven; i++)
+            foreach(char character in chars)
             {
-                System.Console.Write(chars[i]);
+                if(IsScherp)
+                {
+                    Console.Write(character);
+                    geschrevenKarakters++;
+                }
+                else
+                {
+                    Console.Write('#');
+                }
             }
-            for (int i = maxTeSchrijven; i < chars.Length; i++)
-            {
-                System.Console.Write('#');
-            }
-            System.Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

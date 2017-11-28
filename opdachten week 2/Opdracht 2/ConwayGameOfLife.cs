@@ -7,7 +7,7 @@ namespace ConwayGameOfLife
   {
     const int WIDTH = 300;
     const int HEIGHT = 140;
-    const int LIVECHANCE = 10; // each cell has a change to be (initially) alive
+    const int LIVECHANCE = 5; // each cell has a change to be (initially) alive
 
     private bool[,] space;
     SolidBrush liveBrush = new SolidBrush(Color.Red);

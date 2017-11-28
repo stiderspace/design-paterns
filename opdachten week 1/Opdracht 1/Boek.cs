@@ -9,18 +9,12 @@ namespace Opdracht_1
     class Boek:BoekhandelItem
     {
 
-        public Boek(double prijs, string title, int aantal) : base(prijs, title, aantal)
+        public Boek(float prijs, string title, int aantal,string auteur) : base(prijs, title, aantal)
         {
-            this.Prijs = prijs;
-            this.Title = title;
-            this.Aantal = aantal;
+            this.Auteur = auteur;
         }
 
-        public int Auteur
-        {
-            get;
-            
-        }
+        public string Auteur { get; set; }
 
         public override string ToString()
         {

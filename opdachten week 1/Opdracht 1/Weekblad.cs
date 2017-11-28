@@ -9,18 +9,15 @@ namespace Opdracht_1
     class Weekblad:BoekhandelItem
     {
 
-        public Weekblad(double prijs, string title, int aantal)
+        public Weekblad(float prijs, string title, int aantal, string uitgifte)
             : base(prijs, title, aantal)
         {
-            this.Prijs = prijs;
-            this.Title = title;
-            this.Aantal = aantal;
+            this.UitgifteDag = uitgifte;
         }
 
-        public int UitgifteDag
+        public string UitgifteDag
         {
             get; set;
-
         }
 
         public override string ToString()

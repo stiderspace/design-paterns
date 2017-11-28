@@ -10,7 +10,7 @@ namespace Opdracht_3
     {
         static void Main(string[] args)
         {
-            IPotlood p = new Potlood(20); // het potlood kan maximaal 20 karakters schrijven
+            IPotlood p = new Potlood(25); // het potlood kan maximaal 20 karakters schrijven
             string boodschap = "Deze regel is meer dan 20 karakters lang.";
             p.Schrijf(boodschap);
             if (!p.IsScherp)
@@ -19,6 +19,9 @@ namespace Opdracht_3
                 slijper.Slijp(p); // in de Slijp-methode wordt "NaGeslepen()" van p aangeroepen
             }
             boodschap = "Potlood is weer ok!";
+            p.Schrijf(boodschap);
+
+            boodschap = "Deze regel is meer dan 20 karakters lang.";
             p.Schrijf(boodschap);
             Console.ReadKey();
         }

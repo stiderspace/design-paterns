@@ -8,9 +8,9 @@ namespace Opdracht_3
 {
     class SimpleMP3Display : IObserver
     {
-        private MP3Player player;
+        private ISubject player;
 
-        public SimpleMP3Display(MP3Player player)
+        public SimpleMP3Display(ISubject player)
         {
             this.player = player;
             player.AddObserver(this);

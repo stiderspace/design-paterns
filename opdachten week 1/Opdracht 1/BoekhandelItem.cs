@@ -8,39 +8,26 @@ namespace Opdracht_1
 {
     abstract class BoekhandelItem
     {
-        protected int aantal;
+        public int Aantal { get; set; }
+        public float Prijs { get; set; }
+        public string Title { get; set; }
 
-        public BoekhandelItem(double prijs, string title, int aantal)
+        public BoekhandelItem(float prijs, string title, int aantal)
         {
-            this.aantal = aantal;
-        }
-
-        public int Aantal
-        {
-            get { return aantal; } protected set { this.aantal = Aantal; }
-
-        }
-
-        public Double Prijs
-        {
-            get; protected set;
-
-        }
-
-        public string Title
-        {
-            get; protected set;
+            this.Aantal = aantal;
+            this.Prijs = prijs;
+            this.Title = title;
         }
 
         public void WijzigVoorraad(bool Subtract, int aantal)
         {
             if (Subtract)
             {
-                this.aantal = this.aantal - aantal;
+                this.Aantal = this.Aantal - aantal;
             }
             else
             {
-                this.aantal = this.aantal + aantal;
+                this.Aantal = this.Aantal + aantal;
             }
         }
     }
