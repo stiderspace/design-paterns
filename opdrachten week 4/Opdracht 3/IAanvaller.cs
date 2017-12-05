@@ -3,7 +3,7 @@
     internal interface IAanvaller
     {
         void GebruikWapen();
-        void KoppelBestuurder();
+        void KoppelBestuurder(string player);
         void RijNaarVoren();
     }
 }

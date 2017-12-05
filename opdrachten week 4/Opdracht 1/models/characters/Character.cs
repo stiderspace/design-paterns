@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Opdracht_1.models.characters
 {
-    class Character 
+    abstract class Character 
     {
         private IWeaponBehaviour weapon;
         public IWeaponBehaviour Weapon { get { return weapon; } set { weapon = value; } }
