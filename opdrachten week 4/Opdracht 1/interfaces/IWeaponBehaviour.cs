@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Opdracht_1.interfaces
 {
-    public interface ITreinController
+    public interface IWeaponBehaviour
     {
-        void VolgendStation();
+        void UseWeapon();
     }
 }

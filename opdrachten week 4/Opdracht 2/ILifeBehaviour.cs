@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Opdracht_1.interfaces
+namespace ConwayGameOfLife
 {
-    public interface ITreinController
+    public interface ILifeBehaviour
     {
-        void VolgendStation();
+        bool CellShouldLive(bool livingCell, int neighbourCount);
     }
 }
