@@ -11,9 +11,9 @@ namespace Opdracht_1
         static void Main(string[] args)
         {
             Boekhandel boekhandel = new Boekhandel();
-            boekhandel.Voegtoe(new Boek(9.59, "DERPFACE", 3));
-            boekhandel.Voegtoe(new CD(2.99, "donald Duck", 5));
-            boekhandel.Voegtoe(new Weekblad(88.5, "donald Duck", 25));
+            boekhandel.Voegtoe(new Boek(9.59f, "DERPFACE", 3, "derp"));
+            boekhandel.Voegtoe(new CD(2.53f, "donald Duck", 5, "slurp"));
+            boekhandel.Voegtoe(new Weekblad(88.5f, "donald Duck", 25, "2323"));
             boekhandel.PrintVoorraad();
 
             Console.WriteLine("");

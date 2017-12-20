@@ -8,11 +8,11 @@ namespace Opdracht_1
 {
     class Boekhandel
     {
-        public List<BoekhandelItem> items = new List<BoekhandelItem>();
+        public List<BoekhandelItem> items;
 
         public Boekhandel()
         {
-            
+            items = new List<BoekhandelItem>();
         }
 
         public void Voegtoe(BoekhandelItem item)
@@ -24,7 +24,7 @@ namespace Opdracht_1
         {
             foreach(BoekhandelItem book in items)
             {
-                Console.WriteLine(book.ToString() + "  {0} : {1} : {2} : {3}", book.Title, book.Prijs, book.Aantal);
+                Console.WriteLine(book.ToString() + "  {0} : {1} : {2}", book.Title, book.Prijs, book.Aantal);
             }
         }
 
