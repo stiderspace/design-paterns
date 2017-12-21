@@ -11,6 +11,7 @@ namespace Opdracht_3
         public Potlood(int max)
         {
             maxTeSchrijven = max;
+            geschrevenKarakters = 0;
         }
 
         public bool IsScherp => geschrevenKarakters < maxTeSchrijven;
@@ -22,9 +23,9 @@ namespace Opdracht_3
 
         public void Schrijf(string boodschap)
         {
-            char[] chars = boodschap.ToCharArray();
+        //    char[] chars = boodschap.ToCharArray();
 
-            foreach(char character in chars)
+            foreach(char character in boodschap)
             {
                 if(IsScherp)
                 {

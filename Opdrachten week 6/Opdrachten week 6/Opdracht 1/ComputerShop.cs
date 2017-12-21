@@ -2,11 +2,22 @@
 
 namespace Opdracht_1
 {
-    internal class ComputerShop
+    public abstract class ComputerShop
     {
-        internal void AssembleMachine()
+        public void AssembleMachine()
         {
-            throw new NotImplementedException();
+            IHardDisk disk = createHarddisk();
+            disk.StoreData();
+            IMonitor monitor = createMonitor();
+            monitor.Display();
+            IProcessor cpu = createProcessor();
+            cpu.PreformOperation();
+
         }
+
+        public abstract IHardDisk createHarddisk();
+        public abstract IMonitor createMonitor();
+        public abstract IProcessor createProcessor();
+
     }
 }

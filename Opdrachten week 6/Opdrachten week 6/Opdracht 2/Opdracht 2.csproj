@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11131591-27B1-4314-9E0D-5988E41A0461}</ProjectGuid>
+    <ProjectGuid>{D83E7406-E3BA-4D87-8716-CB3BE7C84A50}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Opdracht_1</RootNamespace>
-    <AssemblyName>Opdracht 1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Opdracht_2</RootNamespace>
+    <AssemblyName>Opdracht 2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,17 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComputerShop.cs" />
-    <Compile Include="HighBudgetShop.cs" />
-    <Compile Include="LowHardDrive.cs" />
+    <Compile Include="HighBudgetMachine.cs" />
     <Compile Include="HighHardDrive.cs" />
-    <Compile Include="LowMonitor.cs" />
     <Compile Include="HighMonitor.cs" />
-    <Compile Include="LowProcessor.cs" />
     <Compile Include="HighProcessor.cs" />
     <Compile Include="IHardDisk.cs" />
+    <Compile Include="IMachineFactory.cs" />
     <Compile Include="IMonitor.cs" />
     <Compile Include="IProcessor.cs" />
-    <Compile Include="LowBudgetShop.cs" />
+    <Compile Include="LowBudgetMachine.cs" />
+    <Compile Include="LowHardDrive.cs" />
+    <Compile Include="LowMonitor.cs" />
+    <Compile Include="LowProcessor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,4 +63,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
