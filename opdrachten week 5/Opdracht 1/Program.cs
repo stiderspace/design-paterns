@@ -10,6 +10,14 @@ namespace Opdracht_1
     {
         static void Main(string[] args)
         {
+            Logger logger = Logger.GetInstance();
+            logger.log("main", "Starting.....");
+
+            MainSystem system = new MainSystem();
+            system.DoSomeMainWork();
+            logger.log("main", "finished!!");
+
+            Console.Read();
         }
     }
 }
